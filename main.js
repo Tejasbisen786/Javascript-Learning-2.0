@@ -32,8 +32,9 @@ const dlt = document.getElementById("delete");
 
 // **** Local Storage *******
 
-function btnClick() {
-    localStorage.setItem("key1", input.value);
+function btnClick() {                   // Stringigy : object -> String
+                                       // json.parse -> string -> object 
+    localStorage.setItem("key1", JSON.stringify({username:"Tejas",Password:"123"}));
     if (input.value == "") {
       alert(` Value is empty !!! Please Enter The Value`);
     } else {
@@ -54,10 +55,21 @@ dlt.addEventListener("click", () => {
   
 
   if (localStorage.getItem("key1")) {
-  console.log(localStorage.getItem("key1")); // accesing the sessionStorage Value
+  console.log(json.parse(localStorage.getItem("key1"))); // accesing the sessionStorage Value
 }
 
 
 
 // localStorage stored permanently until we deleted stuff
 // but session storage data delted its scope eithin a tab if 
+
+
+// Realtime example:
+//  storing the product in 
+// cart pages until and unless 
+// if tab is accedelnly would delete
+
+// Storing Capacity 
+// Localstorage : 10 mb 
+// SessionStorage : 5mb 
+//  and rest is depends on browser 
