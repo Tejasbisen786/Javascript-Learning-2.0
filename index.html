@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local and Session Storage in Javascript</title>
+    <style>
+      .box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      /* .mainbox {
+        width: 100vw;
+        height: 50vh;
+        border: 1px solid;
+      } */
+      #myInput {
+        width: 250px;
+        padding: 10px 15px;
+        border: 1px solid rgb(0, 0, 0, 0.4);
+        font-size: 0.8rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #myBtn , #delete {
+        width: 280px;
+        padding: 10px 15px;
+        border: 1px solid rgba(39, 121, 209, 0.901);
+        background-color: rgba(39, 121, 209, 0.901);
+        color: white;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #delete{
+        background-color: rgb(210, 30, 30);
+        border: 1px solid rgb(210, 30, 30);
+        
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="mainbox">
+        <input type="text" id="myInput" placeholder="Enter Any Value" />
+        <button id="myBtn">Click Here</button>
+        <button id="delete">Delete</button>
+
+      </div>
+    </div>
+  </body>
+
+  <script src="./main.js"></script>
+</html>
