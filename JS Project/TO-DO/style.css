@@ -1,0 +1,83 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background: #20002c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 30px;
+  color: #20002c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  border: 1px solid #cbb4d4;
+  font: 100 1.1rem sans-serif;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px;
+}
+button {
+  background-color:#cbb4d4;
+  color:#20002c;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color:#20002c;
+  color: #e6e2e8;
+}
+
+.task {
+  background-color: rgb(247, 247, 247);
+  font: 100 1.1rem sans-serif;
+  padding: 30px;
+  margin: 2vmax;
+  color: rgba(0, 0, 0, 0.868);
+  display: flex;
+  align-items: center;
+}
+
+.task > div {
+  width: 100%;
+}
+
+.task span {
+  color: rgba(0, 0, 0, 0.632);
+}
+
+.deleteBtn {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+}
